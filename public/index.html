@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joc del Virus</title>
+</head>
+
+<body>
+    <div class="virusicon"></div>
+    <div class="ba"></div>
+
+    <div id="GameModeDiv">  
+        <div class="alertMode">
+            <div class="titleMode">
+                <h3>GAME MODE</h3>
+            </div>
+            <div class="explicacio">
+                <p>"Virus" is a board game designed by Julio E. Nazario and published by Tranjis Games. In this game,
+                    players take on the roles of doctors and scientists working together to eradicate various diseases
+                    that have infected the human body.</p>
+            </div>
+            <div class="buttonsMode">
+                <div class="buttonM onePlayerMode">
+                    <p>Player vs Player</p>
+                </div>
+                <div class="buttonM maquinaMode">
+                    <p>Machine vs Player</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="startGame">
+        <p>PLAY</p>
+    </div>
+
+    <div class="winner">
+        <p class="winnerP"></p>
+    </div>
+
+    <img class="deck" src="/img/cartaRedera.png" alt="">
+    <div class="container">
+        <div class="tablero maquinaTablero">
+            <div class="cardsContainer maquinaCardsContainer maquinaCardsContainer1"></div>
+            <div class="cardsContainer maquinaCardsContainer maquinaCardsContainer2"></div>
+            <div class="cardsContainer maquinaCardsContainer maquinaCardsContainer3"></div>
+            <div class="cardsContainer maquinaCardsContainer maquinaCardsContainer4"></div>
+        </div>
+
+        <div class="tablero playerTablero">
+            <div class="cardsContainer playerCardsContainer playerCardsContainer1"></div>
+            <div class="cardsContainer playerCardsContainer playerCardsContainer2"></div>
+            <div class="cardsContainer playerCardsContainer playerCardsContainer3"></div>
+            <div class="cardsContainer playerCardsContainer playerCardsContainer4"></div>
+        </div>
+    </div>
+
+    <div class="acabarTorn">
+        <p>ACABAR TORN</p>
+    </div>
+
+    <lord-icon src="https://cdn.lordicon.com/exkbusmy.json" trigger="hover" class="trash">
+    </lord-icon>
+
+    <script type="module" src="/js/Main.js"></script>
+    <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+
+
+
+</body>
+
+</html>
