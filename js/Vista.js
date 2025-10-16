@@ -66,7 +66,7 @@ export default class Vista {
      * @param {String} gameMode
      */
     addHandCards(card, index, allFunctions, torn, gameMode) {
-      const src = `/img/${card.color}-${card.tipus}.png`;
+      const src = `./img/${card.color}-${card.tipus}.png`;
       const id = card.id;
   
       const img = document.createElement('img');
@@ -187,7 +187,7 @@ export default class Vista {
      */
     automaticAddCardMaquina(idcard, containerName, posCard) {
       if (posCard != -1) {
-        const src = `/img/${idcard.split('_')[1]}-${idcard.split('_')[0]}.png`;
+        const src = `./img/${idcard.split('_')[1]}-${idcard.split('_')[0]}.png`;
         const id = idcard;
   
         const img = document.createElement('img');
@@ -231,7 +231,7 @@ export default class Vista {
      */
     changeTornView(torn) {
       for (const handCard of document.querySelectorAll(`.${this.players[torn]}Card`)) {
-        handCard.src = '/img/cartaRedera.png';
+        handCard.src = './img/cartaRedera.png';
       }
   
       if (torn == 0) {
@@ -242,7 +242,7 @@ export default class Vista {
   
       for (let i = 0; i < 3; i++) {
         const handCard = document.querySelector(`.${this.players[torn]}Card${i + 1}`);
-        handCard.src = `/img/${handCard.id.split('_')[1]}-${handCard.id.split('_')[0]}.png`;
+        handCard.src = `./img/${handCard.id.split('_')[1]}-${handCard.id.split('_')[0]}.png`;
       }
     }
     /**
